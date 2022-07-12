@@ -8,7 +8,14 @@ public class Main {
 
         flower.setColor(ColorType.GREEN);
 
-        System.out.println(flower);
-        
+
+        ColorType[] types = ColorType.values();
+
+        for (int i = 0; i < types.length; i++) {
+            System.out.println(types[i].name() + " - " + types[i].ordinal());
+        }
+
+        System.out.println();
+
     }
 }
